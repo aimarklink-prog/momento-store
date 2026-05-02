@@ -1,6 +1,6 @@
 const products = [
   {id: "5001", price: 52.5, img: "images/5001.jpg"},
-  {id: "5002A", price: 45, img: "images/5002a.jpg"},
+  {id: "5002A", price: 45, img: "images/5002A.jpg"},
   {id: "5002B", price: 45, img: "images/5002b.jpg"},
   {id: "5003", price: 52.5, img: "images/5003.jpg"},
   {id: "5004", price: 45, img: "images/5004.jpg"},
