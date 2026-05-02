@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Detail</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="product-page">
+
+  <!-- LEFT SIDE -->
+  <div class="left">
+    <a href="index.html" class="back-btn">⬅ Back</a>
+
+    <div class="thumb-box">
+      <img id="thumbImg">
+    </div>
+
+    <div class="main-img-box">
+      <img id="productImg">
+    </div>
+  </div>
+
+  <!-- RIGHT SIDE -->
+  <div class="right">
+    <h2 id="productName"></h2>
+    <h3 class="price" id="productPrice"></h3>
+
+    <button class="add-btn">+ Add to Cart</button>
+
+    <div class="about">
+      <h4>About Product</h4>
+    </div>
+
+    <div class="seller-box">
+      <h4>Seller</h4>
+
+      <div class="seller-card">
+        <div>
+          <h3>MOMENTO</h3>
+          <div class="contact">
+            📞 9829963758
+          </div>
+        </div>
+
+        <div class="shop-icon">🏪</div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+
+const name = params.get("name");
+const price = params.get("price");
+const img = params.get("img");
+
+document.getElementById("productName").innerText = name;
+document.getElementById("productPrice").innerText = "₹" + price;
+document.getElementById("productImg").src = img;
+document.getElementById("thumbImg").src = img;
+</script>
+
+</body>
+</html>
