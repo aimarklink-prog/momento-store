@@ -29,24 +29,26 @@ body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 20px;
-  padding: 20px 40px; /* 👈 side padding same jaisa screenshot */
+  padding: 20px 40px;
 }
 
+/* Card */
 .card {
   background: white;
   border-radius: 12px;
-  /*padding: 12px; */
+  padding: 10px; /* 👈 add padding */
   text-align: center;
 }
 
-/* IMAGE BOX EXACT */
+/* ✅ IMAGE FIX (MAIN SOLUTION 🔥) */
 .card img {
   width: 100%;
- /* height: 130px;   👈 same height */
-  object-fit: contain;
+  height: 130px;          /* 👈 FIXED HEIGHT */
+  object-fit: contain;    /* 👈 image cut nahi hogi */
   background: #f0f0f0;
   border-radius: 8px;
- /* padding: 10px; /* 👈 inner spacing same */
+  padding: 10px;          /* 👈 inner spacing */
+  display: block;
 }
 
 /* Text */
@@ -57,9 +59,8 @@ body {
 
 .price {
   font-weight: bold;
+  margin: 10px 0;
 }
-object-fit: contain;
-height: 120px;
 
 /* Button */
 .btn {
@@ -71,6 +72,7 @@ height: 120px;
   background: white;
   cursor: pointer;
 }
+
 /* PRODUCT PAGE LAYOUT */
 .product-page {
   display: flex;
@@ -104,6 +106,7 @@ height: 120px;
   width: 100%;
 }
 
+/* Main Image */
 .main-img-box {
   width: 400px;
   height: 400px;
@@ -123,10 +126,6 @@ height: 120px;
 /* RIGHT SIDE */
 .right {
   width: 50%;
-}
-
-.price {
-  margin: 10px 0;
 }
 
 .add-btn {
